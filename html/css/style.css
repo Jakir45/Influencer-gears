@@ -1,17 +1,149 @@
 body{
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 }
-.open-sans-normal {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: normal;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    max-width: 1108px;
+    margin: 0 auto;
 }
 .navber{
     display: flex;
-    width: 1108px;
     margin: 0 auto;
     justify-content:space-between;
+    align-items: center;
+}
+.nav-title h4{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #3A3A3A;
+    
+}
+.link{
+    display: flex;
+    gap: 20px;
+}
+.link li{
+    list-style: none;    
+}
+.link li >a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #3A3A3A;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+}
+.banner-title{
+    max-width: 580px;
+    
+}
+.banner-title h2{
+    font-weight: 700;
+    font-size: 3rem;
+    color: #3A3A3A;
+    
+}
+.banner-title p{
+    font-weight: 600;
+    font-size: 1rem;
+    color: #3A3A3A;
+}
+.camare{
+    position: absolute;
+}
+.circle{
+    position: relative;
+}
+.img{
+    padding-top: 50px;   
+}
+.btn-primary{
+    font-weight: 700;
+    font-size: 1rem;
+    color:#FFFFFF ;
+    background-color: #E02C6D;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+.icon{
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    gap:20px ;
+    border-top: 1px solid #C0CCDA;
+    border-bottom: 1px solid #C0CCDA;
+    padding: 40px 70px;
+    margin-top: 70px;
+    
+}
+
+
+/* section style */
+main{
+    max-width: 1108px;
+    margin: 0 auto;
+}
+.container-title{
+    font-weight:600 ;
+    font-size: 1.75rem;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.logo{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #557aa31a;
+    border-bottom: 1px solid #4e6d901a;
+    padding: 20px;
+}
+.box{
+    max-width: 310px;
+    max-height: 470px;
+    padding: 15px;
+    box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.5);
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    margin-top: 30px;
+
+}
+.box h2, h3, p{
+    padding-top: 0;
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    /* gap: 10px; */
+}
+
+
+/* navber responsive  */
+@media screen and (max-width:576px) {
+    .navber{
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .img{
+        width: 100%;
+    }
+    .logo{
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+    .card{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
 }
